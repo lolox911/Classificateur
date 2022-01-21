@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Maths</title>
+    <!-- Import -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <!-- Partie gauche -->
+        <section class="sec-1">
+            <h1>Matières</h1>
+            <h4>Veuillez sélectionner une ou plusieurs matières avant de confirmer pour voir le classement.</h4>
+
+            <form id="form" class="form">
+                <div class="form">
+                    <div class="content">
+                        <div class="container-1">
+                            <div class="choice">
+                                <label>ACDA</label>
+                                <input class="checkbox" type="checkbox" name="ACDA" id="ACDA">
+                            </div>
+
+                            <div class="choice">
+                                <label>Anglais</label>
+                                <input class="checkbox" type="checkbox" name="ANG" id="ANG">
+                            </div>
+            
+                            <div class="choice">
+                                <label>APL</label>
+                                <input class="checkbox" type="checkbox" name="APL" id="APL">
+                            </div>
+            
+                            <div class="choice">
+                                <label>ART</label>
+                                <input class="checkbox" type="checkbox" name="ART" id="ART">
+                            </div>
+
+                            <div class="choice">
+                                <label>ASR</label>
+                                <input class="checkbox" type="checkbox" name="ASR" id="ASR">
+                            </div>
+            
+                        </div>
+            
+                        <div class="container-2">
+                            
+                            <div class="choice">
+                                <label>EC</label>
+                                <input class="checkbox" type="checkbox" name="EC" id="EC">
+                            </div>
+
+                            <div class="choice">
+                                <label>EGOD</label>
+                                <input class="checkbox" type="checkbox" name="EGOD" id="EGOD">
+                            </div>
+
+                            <div class="choice">
+                                <label>Maths</label>
+                                <input class="checkbox" type="checkbox" name="MAT" id="MAT">
+                            </div>
+
+                            <div class="choice">
+                                <label>SGBD</label>
+                                <input class="checkbox" type="checkbox" name="SGBD" id="SGBD">
+                            </div>
+
+                            <div class="choice">
+                                <label>SPORT</label>
+                                <input class="checkbox" type="checkbox" name="SPORT" id="SPORT">
+                            </div>
+                            
+                        </div>
+                        <div class="allS">
+                            <label>Faire apparaitre tous les élèves</label>
+                            <input class="checkbox" type="checkbox" name="allStudent" id="allStudent">
+                        </div>
+                    </div>
+                    <input type="button" onclick="getMatieres()" value="Confirmer" class="confirmer">
+                    <br>
+                    <br>
+                    <input type="button" onclick="resetForm()" value="Réinitialiser" class="reset">
+                </div>
+            </form>
+            <br>
+            <p id="verifDonnees"></p>
+        </section>
+        <!-- Partie droite -->
+        <section class="sec-2">
+            <div>
+                <p Class="MatiereSelect" id="MatiereSelect"></p>
+                <table class="tableau" id="tableau">
+                    
+                </table>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>Site crée par Loïc NIRLO et Gabriel Chavanon</p>
+    </footer>
+
+    <!-- <script src="http://www.iut-fbleau.fr/projet/maths/?f=votes.js"></script> -->
+    <!-- <script src="http://www.iut-fbleau.fr/projet/maths/?f=logins.js"></script> -->
+    <script src="votes.js"></script>
+    <script src="logins.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
